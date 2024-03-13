@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar.js'
-import Learn from './components/Learn'
+// import Learn from './components/Learn'
 import TextForm from './components/TextForm.js'
 import React, {useState,useEffect } from 'react'
 import Alert from './components/Alert.js'
@@ -137,24 +137,26 @@ function App() {
      need to use exact */}
 
 
-    <Router>
+    {/* <Router> */}
     <Navbar  title="TextUtils"  mode={mode} toggleStyle={toggleStyle}/>  
     <Alert alert={alert}/>
-    <div className=" container my-3">
-     <Routes>
-          <Route exact path="/learn" element={<Learn />}></Route>
+    <TextForm heading="Enter the text to Analyze below" showAlert={showAlert}  mode={mode} />
+    {/* <div className=" container my-3"> */}
+     {/* <Routes> */}
+          {/* <Route exact path="/learn" element={<Learn />}></Route> */}
          
-          <Route exact path="/" element={<TextForm heading="Enter the text to Analyze below" showAlert={showAlert}  mode={mode} />}></Route>
-        </Routes>
+          {/* <Route exact path="/" element={<TextForm heading="Enter the text to Analyze below" showAlert={showAlert}  mode={mode} />}></Route> */}
+         
+        {/* </Routes> */}
 
             
         
     
 
 
-    </div>
+    {/* </div> */}
    
-    </Router>
+    {/* </Router> */}
 
     </>
 

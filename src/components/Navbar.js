@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Link } from 'react-router-dom';
+// import { a } from 'react-router-dom';
 
 
 
@@ -10,11 +10,11 @@ export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode.txt} bg-${props.mode.bg}` }>
     <div className="container-fluid mx-2 ">
-      <Link className={`navbar-brand `} to="/">{props.title}</Link>
+      <a className={`navbar-brand `} to="/#">{props.title}</a>
 
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/Learn">Home</Link>
+          <a class="nav-link active" aria-current="page" to="/#">Home</a>
         </li>
         </ul>
         
